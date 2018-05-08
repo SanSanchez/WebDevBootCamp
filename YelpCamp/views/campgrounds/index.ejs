@@ -1,4 +1,4 @@
-<% include partials/header.ejs %>
+<% include ../partials/header.ejs %>
 <div class="container">
     <header class="jumbotron">
         <div class="container">
@@ -13,17 +13,17 @@
     <div class="row text-center" style="display:flex; flex-wrap:wrap;">
         <% campgrounds.forEach((camp) => { %>
             <div class="col-md-3 col-sm-6">
-                <div class="img-thumbnail">
-                    <img style="width:100%" src="<%= camp.image %>" alt="">
-                    <div class="caption">
-                        <h4> <%= camp.name %></h4>
+                <div class="card">
+                    <img class="card-img-top"style="width:100%" src="<%= camp.image %>" alt="">
+                    <div class="card-body">
+                        <div class="caption-full">
+                            <h4> <%= camp.name %></h4>
+                        </div>
+                        <p><a href="/campgrounds/<%= camp._id%>" class="btn btn-primary">More Info</a></p>
                     </div>
-                    <p>
-                        <a href="/campgrounds/<%= camp._id%>" class="btn btn-primary">More Info</a>
-                    </p>
                 </div>
             </div>
         <% });  %>
     </div>
 </div>
-<% include partials/footer.ejs %>
+<% include ../partials/footer.ejs %>
