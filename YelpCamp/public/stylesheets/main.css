@@ -14,3 +14,9 @@
 .card-text {
     margin: 1em;
 }
+
+.index-card .card-img-top{
+    max-height: 160.5px;
+}
+
+.navbar .nav

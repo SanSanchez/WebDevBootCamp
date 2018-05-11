@@ -50,7 +50,7 @@ let populateCampgrounds = () => {
                 console.log(err);
                 console.log("Error in creating campground.");
             } else {
-                console.log("Added a campground.");
+                console.log("\tAdded a campground.");
                 populateComments(campground);
             }
         });
@@ -68,6 +68,7 @@ let populateComments = (campground) => {
         } else {
             campground.comments.push(comment);
             campground.save();
+            console.log("\t\tAdded Comments")
         }
     });
 };

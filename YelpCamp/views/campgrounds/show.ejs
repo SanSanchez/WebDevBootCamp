@@ -19,7 +19,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                     <a class="btn btn-success"  href="/campgrounds/<%= campground._id %>/comments/new">Add New Comment</a>
+                     <a class="btn btn-success" href="/campgrounds/<%= campground._id %>/comments/new">Add New Comment</a>
                     </div>
                 </div>
                 <% campground.comments.forEach((comment) => { %>
@@ -37,6 +37,4 @@
         </div>
     </div>
 </div>
-
-
 <% include ../partials/footer.ejs%>
